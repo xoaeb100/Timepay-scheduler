@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { ArticleCompComponent } from './article/article-comp/article-comp.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'app-article-comp',  component: ArticleCompComponent },
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
